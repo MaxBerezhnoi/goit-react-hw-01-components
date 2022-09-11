@@ -1,0 +1,22 @@
+.transaction-history{
+    border: solid 2px green;
+    width: 800px;
+    font-size: large;
+    padding: 10px;
+}
+
+
+th {
+    border: solid 2px green;
+    margin-bottom: 5px;
+    background-color: green;
+    color: blanchedalmond;
+}
+
+td {
+    border-bottom: solid 2px greenyellow ;
+    border-color: greenyellow;
+    margin-bottom: 3px;
+
+}
+

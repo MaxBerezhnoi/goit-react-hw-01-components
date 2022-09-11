@@ -1,11 +1,10 @@
 //import React from "react";
 //import ReactDOM from "react-dom";
-import Profile from "../src/components/Profile";
-import Statistics from "../src/components/Statistics";
-import FriendList from "../src/components/FriendList";
-import TransactionHistory from "../src/components/TransactionHistory";
+import Profile from "components/Profile";
+import FriendList from "components/FriendList";
+import TransactionHistory from "components/TransactionHistory";
 
-import data from "./data.json";
+
 import user from './user.json';
 import friends from "./friends.json";
 import items from "./transactions.json";
@@ -16,11 +15,12 @@ export default function App() {
     <div
       style={{
         height: '100vh',
-        display: 'flex',
+        display: 'block',
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 20,
-        color: '#010101'
+        color: '#010101',
+        width: 800
       }}
     >
       <Profile 
@@ -28,10 +28,9 @@ export default function App() {
   tag={user.tag}
   location={user.location}
   avatar={user.avatar}
-  stats={user.stats}/>
+  stats={user.stats}></Profile>
 
-<Statistics key={data.id}
-title={data.title}/>
+
 
 <FriendList
 key = {friends.id}

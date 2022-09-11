@@ -1,0 +1,11 @@
+.stat-list{
+    display: flex;
+    flex-direction: column;
+    border: solid 2px rgb(235, 220, 17);
+    background-color: rgb(230, 114, 19);
+    margin-right: 5px;
+    font-size: 30px;
+    align-content: center;
+    padding-right: 5px;
+    color: yellow;
+}

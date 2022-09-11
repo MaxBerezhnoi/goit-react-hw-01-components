@@ -1,9 +1,11 @@
+import "./Statistics.css"
+import PropTypes from "prop-types";
 import StatisticsItems from "../StatisticsItems";
 import data from "../../data.json";
 export default function Statistics({title, id}) {
 
     return(
-      <div><section class="statistics">
+      <div>
           
           <h2 class="title">{title}</h2>
 
@@ -16,8 +18,12 @@ export default function Statistics({title, id}) {
   </ul>
   
   
-</section></div>
+</div>
         
     )
 }
 
+Statistics.propTypes ={
+  title: PropTypes.string,
+  id: PropTypes.string
+}

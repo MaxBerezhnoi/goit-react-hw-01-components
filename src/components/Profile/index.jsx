@@ -1,3 +1,7 @@
+import "./Profile.css";
+import PropTypes from "prop-types";
+import Statistics from "components/Statistics";
+import data from "../../data.json";
 export default function Profile ({avatar, username, tag, location, stats}){
   
   return(
@@ -28,5 +32,18 @@ export default function Profile ({avatar, username, tag, location, stats}){
       <span class="quantity"> {stats.likes}</span>
     </li>
   </ul>
+  <Statistics key={data.id}
+title={data.title}/>
 </div>);
+}
+
+Profile.propTypes = {
+  avatar: PropTypes.string,
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  stats: PropTypes.object,
+  followers: PropTypes.number,
+  views: PropTypes.number,
+  likes: PropTypes.number
 }

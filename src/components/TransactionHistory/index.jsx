@@ -1,5 +1,7 @@
+import "./TransactionsHistory.css"
 import TransactionsItems from "../TransactionsItems";
 
+import PropTypes from "prop-types";
 export default function TransactionHistory({items}){
 
     return (
@@ -27,4 +29,8 @@ export default function TransactionHistory({items}){
 </table>
         </section>
     )
+}
+
+TransactionHistory.propTypes = {
+    items: PropTypes.object
 }
