@@ -6,7 +6,7 @@ export default function TransactionHistory({items}){
 
     return (
         <section>
-            <table class="transaction-history">
+            <table className="transaction-history">
   <thead>
     <tr>
       <th>Type</th>
@@ -18,6 +18,7 @@ export default function TransactionHistory({items}){
   <tbody>
     {items.map(items => (
     <TransactionsItems
+    key = {items.id}
     type = {items.type}
     currency = {items.currency}
     amount = {items.amount}
@@ -32,5 +33,5 @@ export default function TransactionHistory({items}){
 }
 
 TransactionHistory.propTypes = {
-    items: PropTypes.object
+    items: PropTypes.array
 }

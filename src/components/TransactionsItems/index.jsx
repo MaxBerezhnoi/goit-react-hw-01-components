@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 import { Fragment } from "react"
 
-export default function TransactionsItems({type, currency, amount}){
+export default function TransactionsItems({type, currency, amount, id}){
     return(
-    <Fragment><tr>
+    <Fragment ><tr >
         <td>{type}</td>
         <td>{currency}</td>
         <td>{amount}</td>
@@ -13,6 +13,6 @@ export default function TransactionsItems({type, currency, amount}){
 
 TransactionsItems.propTypes = {
 type: PropTypes.string,
-currency: PropTypes.number,
-amount: PropTypes.number
+currency: PropTypes.string,
+amount: PropTypes.string
 }

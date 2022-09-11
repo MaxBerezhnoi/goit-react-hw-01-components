@@ -3,9 +3,9 @@ import { Fragment } from "react"
 
 export default function StatisticsItems({label, percentage}) {
     return (
-        <Fragment><li class="item">
-      <span class="label"> {label}</span>
-      <span class="percentage">: {percentage}</span>
+        <Fragment><li className="item">
+      <span className="label"> {label}</span>
+      <span className="percentage">: {percentage}</span>
     </li></Fragment>
         
     )

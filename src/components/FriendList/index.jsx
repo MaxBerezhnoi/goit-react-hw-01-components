@@ -5,8 +5,8 @@ import FriendListItems from "../FriendListItems";
 export default function FriendList({friends}){
     return(
 
-        <ul class="friend-list">
-            {friends.map(friends=>(<li class="friend-list_item"><FriendListItems 
+        <ul className="friend-list">
+            {friends.map(friends=>(<li className="friend-list_item" key = {friends.id}><FriendListItems 
 avatar ={friends.avatar}
 name = {friends.name}
 isOnline = {friends.isOnline}
@@ -17,7 +17,7 @@ isOnline = {friends.isOnline}
 }
 
 FriendList.propTypes = {
-    friends: PropTypes.object,
+    friends: PropTypes.array,
     avatar: PropTypes.string,
     name: PropTypes.string,
     isOnline: PropTypes.bool

@@ -3,12 +3,12 @@ import "./FriendListItems.css";
 import PropTypes from "prop-types";
 export default function FriendListItems ({avatar, name, isOnline}){
   return (
-    <section class="friendCard">
-      <li class="item">
-        {isOnline === true ? (<span class="status">On{isOnline}</span>) : (<span class="statusOff">Off{isOnline}</span>)}
+    <section className="friendCard">
+      <li className="item">
+        {isOnline === true ? (<span className="status">On{isOnline}</span>) : (<span className="statusOff">Off{isOnline}</span>)}
   
-  <img class="avatar" src={avatar} alt="User avatar" width="48" />
-  <p class="name">{name}</p>
+  <img className="avatar" src={avatar} alt="User avatar" width="48" />
+  <p className="name">{name}</p>
 </li>
 </section>
    
