@@ -1,14 +1,14 @@
 
-import "./FriendListItems.css";
+import css from  "./FriendListItems.module.css";
 import PropTypes from "prop-types";
 export default function FriendListItems ({avatar, name, isOnline}){
   return (
-    <section className="friendCard">
-      <li className="item">
-        {isOnline === true ? (<span className="status">On{isOnline}</span>) : (<span className="statusOff">Off{isOnline}</span>)}
+    <section className={css.friendCard}>
+      <li className={css.item}>
+        {isOnline === true ? (<span className={css.status}>On{isOnline}</span>) : (<span className={css.statusOff}>Off{isOnline}</span>)}
   
-  <img className="avatar" src={avatar} alt="User avatar" width="48" />
-  <p className="name">{name}</p>
+  <img className={css.avatar} src={avatar} alt="User avatar" width="48" />
+  <p className={css.name}>{name}</p>
 </li>
 </section>
    

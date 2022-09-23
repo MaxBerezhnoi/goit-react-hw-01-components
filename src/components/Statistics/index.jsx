@@ -1,4 +1,4 @@
-import "./Statistics.css"
+import css from "./Statistics.module.css"
 import PropTypes from "prop-types";
 import StatisticsItems from "../StatisticsItems";
 import data from "../../data.json";
@@ -7,9 +7,9 @@ export default function Statistics({title}) {
     return(
       <div>
           
-          <h2 className="title">{title}</h2>
+          <h2 className={css.title}>{title}</h2>
 
-  <ul className="stat-list">
+  <ul className={css.statList}>
     {data.map(data => (
 <StatisticsItems 
       key = {data.id}

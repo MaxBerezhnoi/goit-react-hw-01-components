@@ -1,4 +1,4 @@
-.stat-list{
+.statList{
     display: flex;
     flex-direction: column;
     border: solid 2px rgb(235, 220, 17);
