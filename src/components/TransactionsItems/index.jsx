@@ -12,7 +12,7 @@ export default function TransactionsItems({type, currency, amount, id}){
 }
 
 TransactionsItems.propTypes = {
-type: PropTypes.string,
-currency: PropTypes.string,
-amount: PropTypes.string
+type: PropTypes.string.isRequired,
+currency: PropTypes.string.isRequired,
+amount: PropTypes.string.isRequired
 }

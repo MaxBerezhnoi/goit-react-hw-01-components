@@ -1,7 +1,7 @@
 import css from "./Statistics.module.css"
 import PropTypes from "prop-types";
 import StatisticsItems from "../StatisticsItems";
-import data from "../../data.json";
+import data from "../../Data/data.json";
 export default function Statistics({title}) {
 
     return(

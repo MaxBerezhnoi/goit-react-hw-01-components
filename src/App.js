@@ -5,9 +5,9 @@ import FriendList from "components/FriendList";
 import TransactionHistory from "components/TransactionHistory";
 
 
-import user from './user.json';
-import friends from "./friends.json";
-import items from "./transactions.json";
+import user from './Data/user.json';
+import friends from "./Data/friends.json";
+import items from "./Data/transactions.json";
 
 
 export default function App() {
@@ -33,12 +33,12 @@ export default function App() {
 
 
 <FriendList
-key = {friends.id}
+
 friends ={friends}
 />
 
 <TransactionHistory 
-key = {items.id}
+
 items = {items}
 />
   
