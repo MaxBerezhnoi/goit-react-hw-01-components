@@ -1,20 +1,17 @@
 import css from "./Statistics.module.css"
 import PropTypes from "prop-types";
-import StatisticsItems from "../StatisticsItems";
-import data from "../../Data/data.json";
-export default function Statistics({title}) {
+//import StatisticsItems from "../StatisticsItems";
+//import data from "../../Data/data.json";
+export default function Statistics({title, children}) {
 
     return(
-      <div>
+      <div className={css.statistic}>
           
-          <h2 className={css.title}>{title}</h2>
+        {title.length > 3 && (<h2 className={css.title}>{ title }</h2>)}
 
   <ul className={css.statList}>
-    {data.map(data => (
-<StatisticsItems 
-      key = {data.id}
-      label={data.label}
-      percentage={data.percentage}/>))}
+         
+{children}
   </ul>
   
   
@@ -24,6 +21,5 @@ export default function Statistics({title}) {
 }
 
 Statistics.propTypes ={
-  title: PropTypes.string,
-  id: PropTypes.string
+  title: PropTypes.string.isRequired,
 }

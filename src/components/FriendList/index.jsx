@@ -17,8 +17,7 @@ isOnline = {friends.isOnline}
 }
 
 FriendList.propTypes = {
-    friends: PropTypes.array.isRequired,
-    avatar: PropTypes.string,
-    name: PropTypes.string,
-    isOnline: PropTypes.bool
+    friends: PropTypes.arrayOf(
+        PropTypes.shape({ id: PropTypes.number}))
+    
 }

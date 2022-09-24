@@ -1,8 +1,7 @@
 import css from "./Profile.module.css";
 import PropTypes from "prop-types";
-import Statistics from "components/Statistics";
-import data from "../../Data/data.json";
-export default function Profile ({avatar, username, tag, location, stats}){
+
+export default function Profile ({avatar, username, tag, location, stats, children}){
   
   return(
     <div className={css.profile}>
@@ -31,9 +30,9 @@ export default function Profile ({avatar, username, tag, location, stats}){
       <span className={css.label}>Likes</span>
       <span className={css.quantity}> {stats.likes}</span>
     </li>
-  </ul>
-  <Statistics key={data.id}
-title={data.title}/>
+      </ul>
+      
+      {children}
 </div>);
 }
 
