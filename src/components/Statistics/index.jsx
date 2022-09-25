@@ -7,7 +7,7 @@ export default function Statistics({title, children}) {
     return(
       <div className={css.statistic}>
           
-        {title.length > 3 && (<h2 className={css.title}>{ title }</h2>)}
+        {title && (<h2 className={css.title}>{ title }</h2>)}
 
   <ul className={css.statList}>
          
@@ -21,5 +21,5 @@ export default function Statistics({title, children}) {
 }
 
 Statistics.propTypes ={
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
 }

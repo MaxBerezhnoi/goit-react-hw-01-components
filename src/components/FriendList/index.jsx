@@ -18,6 +18,6 @@ isOnline = {friends.isOnline}
 
 FriendList.propTypes = {
     friends: PropTypes.arrayOf(
-        PropTypes.shape({ id: PropTypes.number}))
+        PropTypes.shape({ id: PropTypes.number.isRequired}))
     
 }

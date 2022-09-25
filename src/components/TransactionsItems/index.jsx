@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { Fragment } from "react"
 
-export default function TransactionsItems({type, currency, amount, id}){
+export default function TransactionsItems({type, currency, amount}){
     return(
     <Fragment ><tr >
         <td>{type}</td>

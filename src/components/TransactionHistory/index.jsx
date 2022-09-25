@@ -35,3 +35,9 @@ export default function TransactionHistory({items}){
 TransactionHistory.propTypes = {
     items: PropTypes.array.isRequired
 }
+
+TransactionsItems.propTypes = {
+  items: PropTypes.arrayOf(
+      PropTypes.shape({ id: PropTypes.number.isRequired}))
+  
+}
